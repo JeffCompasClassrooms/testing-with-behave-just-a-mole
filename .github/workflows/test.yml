@@ -17,5 +17,10 @@ jobs:
       - name: Install dependencies
         run: pip install behave selenium behave-webdriver
 
-      - name: Run Behave
+      - name: Run amazon
+        working-directory: ./amazon
+        run: behave
+
+      - name: Run utahtech
+        working-directory: ./utahtech
         run: behave
